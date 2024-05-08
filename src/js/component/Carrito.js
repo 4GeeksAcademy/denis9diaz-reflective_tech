@@ -26,13 +26,13 @@ const Carrito = () => {
                     <li key={index}>
                         <img src={item.imagen} alt="Imagen del artículo" className="imagen-articulo-carrito" />
                         <p>{item.descripcion}</p>
-                        <p>Precio: ${item.precio}</p>
+                        <p>Precio: {item.precio}€</p>
                         <button onClick={() => handleRemoveFromCart(index)} className="btn-delete"><FontAwesomeIcon icon={faTrash} /></button>
                     </li>
                 ))}
             </ul>
             <div className="total">
-                <p className="total-price">Total: ${calculateTotal()}</p>
+                <p className="total-price">Total: {calculateTotal()}€</p>
             </div>
         </div>
     );
