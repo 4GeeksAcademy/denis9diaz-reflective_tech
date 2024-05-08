@@ -7,6 +7,7 @@ import Carrito from "./component/Carrito";
 import Navbar from "./component/navbar";
 import Articulo from "./component/Articulo";
 import injectContext from "./store/appContext";
+import Productos from "./views/Productos";
 
 const Layout = () => {
 
@@ -20,6 +21,7 @@ const Layout = () => {
 					<Routes>
 						<Route path="/carrito" element={<Carrito />} />
 						<Route path="/" element={<Home />} />
+						<Route path="/productos" element={<Productos />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 						<Route path="/articulo" element={<Articulo />} />
 					</Routes>

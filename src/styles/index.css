@@ -5,7 +5,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: #333;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -71,8 +71,8 @@
 }
 
 .image-logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
 }
 
@@ -90,7 +90,7 @@
 
 .navbar {
     font-family: 'Montserrat', sans-serif;
-    background-color: #87CEEB !important;
+    background-color: #4db5c7 !important;
     color: black !important;
 }
 
@@ -123,6 +123,10 @@
     align-items: center;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.titulo-navbar{
+    font-weight: bold;
 }
 
 .imagen-articulo-home {
@@ -213,4 +217,44 @@
 
 .total-price {
     margin-left: 100px;
+}
+
+.nav-item{
+    margin-left: 730px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item-2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.titulo-home {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/127/950/non_2x/abstract-soft-blue-background-with-dynamic-waves-shape-free-vector.jpg');
+    background-size: cover;
+    background-position: top; 
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+}
+
+.titulo-home h1 {
+    font-size: 5em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-transform: uppercase; 
+    margin-bottom: 20px; 
+}
+
+.titulo-home p {
+    font-size: 2em; 
+    font-weight: 300; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
