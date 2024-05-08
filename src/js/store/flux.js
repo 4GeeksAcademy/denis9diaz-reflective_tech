@@ -12,7 +12,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			cart: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -37,7 +38,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
-			}
+			},
+			addToCart: item => {
+                const store = getStore();
+                const cart = [...store.cart, item];
+                setStore({ cart: cart });
+            },
+            removeFromCart: index => {
+                const store = getStore();
+                const updatedCart = store.cart.filter((item, i) => i !== index);
+                setStore({ cart: updatedCart });
+            }
 		}
 	};
 };
